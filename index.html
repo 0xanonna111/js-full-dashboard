@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Dashboard</h2>
+      <ul>
+        <li>Overview</li>
+        <li>Users</li>
+        <li>Reports</li>
+        <li>Settings</li>
+      </ul>
+      <button onclick="toggleTheme()">Toggle Theme</button>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <header>
+        <h1>Welcome, Admin</h1>
+      </header>
+
+      <section class="cards">
+        <div class="card">
+          <h3>Total Users</h3>
+          <p id="users">1200</p>
+        </div>
+
+        <div class="card">
+          <h3>Revenue</h3>
+          <p>$<span id="revenue">8,540</span></p>
+        </div>
+
+        <div class="card">
+          <h3>Orders</h3>
+          <p id="orders">320</p>
+        </div>
+      </section>
+
+      <section class="activity">
+        <h3>Recent Activity</h3>
+        <ul>
+          <li>User John signed up</li>
+          <li>New order placed</li>
+          <li>Server backup completed</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
